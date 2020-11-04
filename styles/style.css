@@ -3,6 +3,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    margin: 0;
 }
 
 #header-list {
@@ -26,7 +27,7 @@ body {
 }
 
 a:visited {
-    color: black;
+    color: inherit;
 }
 
 .header-btns:hover, .header-btns:active{
@@ -134,4 +135,60 @@ main {
 
 p {
     font-size: small;
+}
+
+footer {
+    color: rgba(0,0,0,.14);
+    background-color:  #f2f2f2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px  solid #e4e4e4;
+    line-height: 40px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+#footleft li {
+    display: inline-block;
+    padding-left: 20px;
+}
+#footright li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footerbar {
+    display: grid;
+    grid-template-areas: "a a" "b c";
+}
+
+#footer-line1 ul{
+    grid-area: a;
+    width: 100%;
+}
+
+#footer-line1 ul li{
+    padding-left: 20px;
+}
+
+#footleft {
+    grid-area: b;
+}
+
+#footright {
+    grid-area: c;
+    float: right;
+    text-align: right;
+}
+
+li:hover {
+    text-decoration: underline;
 }
